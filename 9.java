@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.*;
 public class Employee extends HttpServlet 
 { 
- public void doGet(HttpServletRequest request, HttpServletResponse 
- response) throws ServletException, IOException 
+ public void doGet(HttpServletRequest request, HttpServletResponse response) 
+ throws ServletException, IOException 
  { 
  String JDBC_DRIVER = "com.mysql.jc.jdbc.Driver"; 
  String DB_URL="jdbc:mysql://localhost/ise";
