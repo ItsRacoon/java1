@@ -11,8 +11,7 @@
  <%String username = request.getParameter("user"); 
  String pwd = request.getParameter("pwd"); 
  Class.forName("com.mysql.jdbc.Driver"); 
- java.sql.Connection con = 
-DriverManager.getConnection("jdbc:mysql://localhost:3306/app","root","system");
+ java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/app","root","system");
  Statement st= con.createStatement();
  ResultSet rs= st.executeQuery("select * from login where  username='"+username+"'"); 
  if(rs.next())
@@ -23,5 +22,6 @@ DriverManager.getConnection("jdbc:mysql://localhost:3306/app","root","system");
  }else
  out.println("Invalid password try again");
  }
- %></body> 
+ %>
+</body> 
 </html>
